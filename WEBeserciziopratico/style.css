@@ -21,11 +21,13 @@ body {
 .container {
   background-image: url(background.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  width: 71%;
+  background-size: contain;
+  width: 90%;
   max-width: 1200px;
+  height: calc(1200px / 1440 * 900);
   margin: 0 auto;
 }
+  
 
 .top-section {
   display: flex;
@@ -37,12 +39,10 @@ body {
 
 .logo {
   text-transform: uppercase;
-  
 }
 
 .links a {
   text-transform: uppercase;
-  
   margin-left: 10px;
   text-decoration: none;
 }
@@ -56,9 +56,14 @@ h1 {
   font-size: 24px;
 }
 
+p {
+  font-size: 24px;
+  color: white;
+}
+
 button {
   padding: 10px 20px;
-  background-color: #fff;
+  background-color: #cbf3f0;
   color: #000;
   border: none;
   cursor: pointer;
@@ -87,6 +92,7 @@ button {
   font-size: 18px;
   line-height: 1.5;
   text-align: center;
+  color: black;
 }
 
 .container2{
@@ -95,8 +101,15 @@ button {
   max-width: 1200px;
   margin: 0 auto;
   height: 99%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+.container2 p {
+  width: 70%;
+  margin:0 auto;
 
+}
 
   /* Terza parte */
 .third-part {
@@ -117,13 +130,13 @@ button {
 
 .block__grid {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 }
 
 .block__item {
-  margin: 20px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -158,7 +171,7 @@ button {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  align-items: flex-start;
+  justify-content: flex-end;
 }
 
 .left-section {
@@ -168,6 +181,13 @@ button {
 
 .right-section {
   flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.right-section img {
+  width: 70%;
+  object-fit: cover;
 }
 
 .left-section h2 {
@@ -178,6 +198,7 @@ button {
 .left-section p {
   font-size: 18px;
   line-height: 1.5;
+  color: black;
 }
 
 /* Footer */
